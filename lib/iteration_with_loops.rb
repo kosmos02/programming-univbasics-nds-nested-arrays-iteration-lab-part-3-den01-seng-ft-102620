@@ -11,6 +11,21 @@ def join_nested_strings(src)
     
     while element_index < src[row_index].count do 
       
-      if 
+      if src[row_index][element_index].is_s?
+        
+        result += src[row_index][element_index]
+        
+      end
+      
+      element_index += 1 
+      
+    end
+    
+    row_index += 1 
+    
+  end
+  
+  result
+  
   
 end
